@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+/* ./src/main.css */
+@tailwind base;
+
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #101924;
+}
+
+@tailwind components;
+@tailwind utilities;
