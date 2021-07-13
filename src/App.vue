@@ -11,7 +11,7 @@
       </button>
     </div> -->
     <div
-      class="mx-auto md:p-6 md:w-1/2 flex items-center justify-end w-full mb-0"
+      class="mx-auto py-2 px-2 md:p-4 md:w-1/2 flex items-center justify-end w-full mb-0"
     >
       <label for="toggleTheme" class="flex items-center cursor-pointer">
         <div class="relative">
@@ -35,11 +35,13 @@
     <div class="mx-auto md:p-6 md:w-1/2 bg-gray-lightest dark:bg-blue-darkest">
       <div class="flex flex-wrap justify-between ">
         <h1
-          class="text-2xl font-normal uppercase text-gray-dark hover:text-gray-900 dark:text-gray-lightest transition duration-500 p-4"
+          class="text-sm md:text-2xl font-normal uppercase text-gray-dark hover:text-gray-900 dark:text-gray-lightest transition duration-500 p-3"
         >
           logo
         </h1>
-        <p class="text-gray-dark dark:text-gray-lightest font-normal mt-2 p-3">
+        <p
+          class="text-sm md:text-lg text-gray-dark dark:text-gray-lightest font-normal mt-2 p-3"
+        >
           Time Left 08:20
         </p>
       </div>
@@ -55,7 +57,8 @@
                   class="w-6 h-6 pr-2"
                   alt=""
                 />
-                <span class="text-gray-dark pl-1 dark:text-gray-lightest"
+                <span
+                  class="text-sm text-gray-dark pl-1 dark:text-gray-lightest"
                   >Bitcoin(BTC)</span
                 >
               </div>
@@ -71,7 +74,7 @@
                 <div
                   class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
                 >
-                  <span class="text-gray-dark dark:text-gray-lightest"
+                  <span class="text-sm text-gray-dark dark:text-gray-lightest"
                     >0.0004567BTC</span
                   >
                 </div>
@@ -82,7 +85,9 @@
                 />
               </div>
               <div class="float-right">
-                <span class="text-gray-light dark:text-gray-lightest">
+                <span
+                  class="text-sm md:text-lg text-gray-light dark:text-gray-lightest"
+                >
                   1 BTC = $32,234.34 (USD)
                 </span>
               </div>
@@ -94,7 +99,7 @@
           <ul class="w-full flex mb-0 list-none pt-3 pb-4 flex-row space-x-2">
             <li class="w-1/2 last:mr-0 flex-auto text-center">
               <a
-                class="text-lg font-normal px-5 py-2 cursor-pointer shadow-md rounded block leading-normal"
+                class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer shadow-md rounded block leading-normal"
                 v-on:click="toggleTabs(1)"
                 v-bind:class="{
                   'text-gray-dark bg-blue-light dark:bg-blue-dark dark:text-gray-lightest':
@@ -108,7 +113,7 @@
             </li>
             <li class="w-1/2 last:mr-0 flex-auto text-center">
               <a
-                class="text-lg font-normal px-5 py-2 cursor-pointer rounded block leading-normal"
+                class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer rounded block leading-normal"
                 v-on:click="toggleTabs(2)"
                 v-bind:class="{
                   'text-gray-dark bg-blue-light dark:bg-blue-dark dark:text-gray-lightest':
@@ -153,28 +158,29 @@
                 >
                   <!-- Copy Section -->
                   <div
-                    class="mb-4 flex flex-col justify-center mx-auto w-max dark:bg-blue-dark"
+                    class="mb-4 flex flex-col justify-center mx-auto  rounded dark:bg-blue-dark"
                   >
                     <div
-                      class="text-center py-4 text-gray-dark dark:text-gray-lightest"
+                      class="text-sm md:text-lg text-center py-4 text-gray-dark dark:text-gray-lightest"
                     >
                       Amount <br />
-                      <span class="text-gray-dark dark:text-gray-lightest"
+                      <span
+                        class="text-sm md:text-lg text-gray-dark dark:text-gray-lightest"
                         >0.0004567BTC</span
                       >
                     </div>
 
-                    <div class="mb-4 dark:bg-blue-dark">
+                    <div class="mb-4 mx-auto dark:bg-blue-dark">
                       <div class="px-4">
                         <label
                           for="address"
-                          class="block text-sm font-normal mb-2 text-gray-dark dark:text-blue-lightest"
+                          class="text-sm block font-normal mb-2 text-gray-dark dark:text-blue-lightest"
                         >
                           Address
                         </label>
                       </div>
                       <div
-                        class="flex border border-pink-light  mx-5 px-2 py-2 bg-pink-200 w-96 dark:bg-blue-darkest dark:border-none dark:border-blue-darkest"
+                        class="flex border border-pink-light px-2 py-2 bg-pink-200 w-full md:w-96 dark:bg-blue-darkest dark:border-none dark:border-blue-darkest sm:w-full"
                       >
                         <div
                           class="border-r border-pink-light px-2 py-1 bg-pink-200 dark:border-none dark:border-blue-darkest"
@@ -189,10 +195,10 @@
                           type="text"
                           value="deryfghrkeofdnfhgdfhvbhfufheujje"
                           readonly
-                          class="text-center focus:outline-none w-full text-gray-dark px-1 py-0 dark:bg-blue-darkest dark:text-gray-lightest"
+                          class="text-sm text-center focus:outline-none text-gray-dark px-1 py-0 dark:bg-blue-darkest dark:text-gray-lightest w-full md:w-full"
                         />
                         <button
-                          class="float-right text-blue-darkest dark:text-gray-lightest"
+                          class="text-sm float-right text-blue-darkest dark:text-gray-lightest"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -211,17 +217,17 @@
                         </button>
                       </div>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4 mx-auto">
                       <div class="px-4">
                         <label
                           for="payment-link"
                           class="block text-sm font-normal mb-2 text-gray-dark dark:text-gray-lightest"
                         >
-                          Paymemt Link
+                          Payment Link
                         </label>
                       </div>
                       <div
-                        class="flex border border-pink-light mx-5 px-2 py-2 bg-pink-200 w-96 dark:bg-blue-darkest dark:border-none dark:border-blue-darkest"
+                        class="flex border border-pink-light px-2 py-2 bg-pink-200 w-full md:w-96 dark:bg-blue-darkest dark:border-none dark:border-blue-darkest sm:w-full"
                       >
                         <div
                           class="border-r border-pink-light px-2 py-1 bg-pink-200 dark:border-none dark:border-blue-darkest"
@@ -236,10 +242,10 @@
                           type="text"
                           value="deryfghrkeofdnfhgdfhvbhfufheujje"
                           readonly
-                          class="text-center focus:outline-none w-full text-gray-dark px-1 py-0 dark:bg-blue-darkest dark:text-gray-lightest"
+                          class="text-sm text-center focus:outline-none text-gray-dark px-1 py-0 dark:bg-blue-darkest dark:text-gray-lightest w-full md:w-full"
                         />
                         <button
-                          class="float-right text-blue-darkest dark:text-gray-lightest"
+                          class="text-sm float-right text-blue-darkest dark:text-gray-lightest"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +271,9 @@
             </div>
           </div>
         </div>
-        <p class="p-4 text-center text-gray-dark dark:text-gray-lightest">
+        <p
+          class="text-sm md:text-lg p-4 text-center text-gray-dark dark:text-gray-lightest"
+        >
           Recommended fee : 345.67Bytes
         </p>
       </div>
