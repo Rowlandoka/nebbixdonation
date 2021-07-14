@@ -84,7 +84,7 @@
                   class="block pr-10  appearance-none bg-gray-darkest dark:bg-blue-dark dark:text-gray-lightest rounded w-full py-2 px-4 text-gray-light mb-3 leading-tight focus:outline-none focus:bg-white focus:border-pink-500 transition duration-500 ease-in-out"
                 />
               </div>
-              <div class="float-right">
+              <div class="float-right py-4">
                 <span
                   class="text-sm md:text-lg text-gray-light dark:text-gray-lightest"
                 >
@@ -145,7 +145,7 @@
                   />
 
                   <button
-                    class="bg-blue text-gray-lightest text-lg hover:bg-blue-darkest dark:hover:bg-blue rounded cursor-pointer p-3 w-full focus:outline-none"
+                    class="bg-blue text-gray-lightest text-lg hover:bg-blue-darkest dark:hover:bg-blue rounded cursor-pointer p-4 w-full focus:outline-none"
                   >
                     Open in Wallet
                   </button>
