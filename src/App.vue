@@ -99,29 +99,29 @@
           <ul class="w-full flex mb-0 list-none pt-3 pb-4 flex-row space-x-2">
             <li class="w-1/2 last:mr-0 flex-auto text-center">
               <a
-                class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer shadow-md rounded block leading-normal"
+                class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer rounded block leading-normal"
                 v-on:click="toggleTabs(1)"
                 v-bind:class="{
                   'text-gray-dark bg-blue-light dark:bg-blue-dark dark:text-gray-lightest':
                     openTab !== 1,
-                  'text-gray-lightest bg-blue-darkest dark:bg-blue-darkest':
-                    openTab === 1,
+                  'text-gray-lightest bg-blue-darkest': openTab === 1,
                 }"
               >
-                Scan
+                Copy
               </a>
             </li>
             <li class="w-1/2 last:mr-0 flex-auto text-center">
               <a
-                class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer rounded block leading-normal"
+                class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer shadow-md rounded block leading-normal"
                 v-on:click="toggleTabs(2)"
                 v-bind:class="{
                   'text-gray-dark bg-blue-light dark:bg-blue-dark dark:text-gray-lightest':
                     openTab !== 2,
-                  'text-gray-lightest bg-blue-darkest': openTab === 2,
+                  'text-gray-lightest bg-blue-darkest dark:bg-blue-darkest':
+                    openTab === 2,
                 }"
               >
-                Copy
+                Scan
               </a>
             </li>
           </ul>
@@ -133,8 +133,8 @@
               <div class="tab-content tab-space">
                 <div
                   v-bind:class="{
-                    hidden: openTab !== 1,
-                    block: openTab === 1,
+                    hidden: openTab !== 2,
+                    block: openTab === 2,
                   }"
                 >
                   <!-- Scan Session -->
@@ -152,8 +152,8 @@
                 </div>
                 <div
                   v-bind:class="{
-                    hidden: openTab !== 2,
-                    block: openTab === 2,
+                    hidden: openTab !== 1,
+                    block: openTab === 1,
                   }"
                 >
                   <!-- Copy Section -->
