@@ -288,7 +288,7 @@ export default {
   name: "App",
   data() {
     return {
-      openTab: 1,
+      openTab: 2,
     };
   },
   beforeMount() {
