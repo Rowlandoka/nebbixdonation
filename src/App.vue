@@ -96,7 +96,7 @@
         </form>
         <!-- Tabs -->
         <div class="w-full">
-          <ul class="w-full flex mb-0 list-none pt-3 pb-4 flex-row space-x-2">
+          <ul class="w-full flex mb-0 list-none pt-3 pb-4 flex-row">
             <li class="w-1/2 last:mr-0 flex-auto text-center">
               <a
                 class="text-sm md:text-lg font-normal px-5 py-2 cursor-pointer rounded block leading-normal"

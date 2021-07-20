@@ -23,6 +23,7 @@ module.exports = {
       },
       pink: {
         light: "#F0EFEB",
+        dark: "#8A91B3",
       },
     },
     extend: {},
